@@ -15,3 +15,5 @@ lines_fn <- function(x0, y0, length_ln, angle_ln){
   
   return(vals)
 }
+#....................................................................................
+#End of function
