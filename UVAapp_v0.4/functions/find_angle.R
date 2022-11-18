@@ -20,3 +20,5 @@ find_angle = function(origin, point){
   
   return(list(left_angle, right_angle))
 }
+#....................................................................................
+#End of function
