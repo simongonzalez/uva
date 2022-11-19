@@ -5,6 +5,7 @@ options(shiny.maxRequestSize = 100*1024^2)
 #Server setup for the app
 shinyServer(function(input, output, session) {
   
+  #Sets up the reactive timer
   autoInvalidate <- reactiveTimer(2000)
   
   #======================================================================================
