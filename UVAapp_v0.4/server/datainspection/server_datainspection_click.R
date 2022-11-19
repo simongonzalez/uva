@@ -105,6 +105,7 @@ output$coordenate_info <- renderText({
 
 #checkbox to show the intersection labels
 output$intersection_labels_UI_main = renderUI({
+  #check if the check box has been ticked
   if(input$line_point_main == T){
     checkboxInput("intersection_labels_main", label = "Labels", value = T)
   }
@@ -113,6 +114,7 @@ output$intersection_labels_UI_main = renderUI({
 #::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 #checkbox to repel labels in the plot object
 output$intersection_labelsRepel_UI_main = renderUI({
+  #check if the check box has been ticked
   if(input$line_point_main == T){
     checkboxInput("intersection_labelsRepel_main", label = "Repel", value = T)
   }
@@ -121,6 +123,7 @@ output$intersection_labelsRepel_UI_main = renderUI({
 #::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 #checkbox to choose showing only the extreme labels in the intersections
 output$intersection_labelsExtreme_UI_main = renderUI({
+  #check if the check box has been ticked
   if(input$line_point_main == T){
     checkboxInput("intersection_labelsExtreme_main", label = "Extreme", value = T)
   }
@@ -129,6 +132,7 @@ output$intersection_labelsExtreme_UI_main = renderUI({
 #::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 #creates button widget to plot lines
 output$plot_lines_UI_main = renderUI({
+  #check if the check box has been ticked
   if(input$line_point_main == F)
     return()
   
