@@ -1,5 +1,5 @@
 output$plotSSANOVAComparison <- renderPlot({
-  
+  #Checks for each of the inputs to run the analysis
   if (is.null(input$file1))
     return()
   if (is.null(input$speakerANOVA))
